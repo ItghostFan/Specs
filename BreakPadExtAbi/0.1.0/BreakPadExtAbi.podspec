@@ -36,7 +36,7 @@ BreakPadExt Binary Dependency.
   
   s.subspec 'Lib' do |lib|
     lib.vendored_libraries = 'libBreakPadExt.a'
-    lib.public_header_files = 'include/**/*.{h, hpp}'
+    lib.source_files = 'include/**/*.*'
     lib.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "\"${PODS_ROOT}/#{s.name}/include\"" }
     lib.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "\"${PODS_ROOT}/#{s.name}/include\"" }
   end
