@@ -32,14 +32,14 @@ BreakPadExt Binary Dependency.
   
   s.requires_arc = true
 
-  # s.default_subspec = 'Lib'
+  s.default_subspec = 'Lib'
   
-  # s.subspec 'Lib' do |lib|
-  #   lib.vendored_libraries = 'libBreakPadExt.a'
-  #   lib.public_header_files = 'include/**/*.{h, hpp}'
-  #   lib.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "\"${PODS_ROOT}/#{s.name}/include\"" }
-  #   lib.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "\"${PODS_ROOT}/#{s.name}/include\"" }
-  # end
+  s.subspec 'Lib' do |lib|
+    lib.vendored_libraries = 'libBreakPadExt.a'
+    lib.public_header_files = 'include/**/*.{h, hpp}'
+    lib.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "\"${PODS_ROOT}/#{s.name}/include\"" }
+    lib.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => "\"${PODS_ROOT}/#{s.name}/include\"" }
+  end
   
   dylibName = 'BreakPadExtDylib.framework'
   s.subspec 'Dylib' do |dylib|
