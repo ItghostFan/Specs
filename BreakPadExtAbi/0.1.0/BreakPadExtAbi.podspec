@@ -25,7 +25,7 @@ BreakPadExt Binary Dependency.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ItghostFan' => 'ItghostFan@163.com' }
-  s.source           = { :http => 'https://github.com/ItghostFan/BreakPadExt/raw/main/bin/BreakPadExt-2022_04_12_10_34_16.zip' }
+  s.source           = { :http => 'https://github.com/ItghostFan/BreakPadExt/raw/main/bin/BreakPadExt-2022_04_12_10_41_28.zip' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
